@@ -13,6 +13,7 @@ html {
   --text-primary-color: #1e1e1e;
   --text-secondary-color: #696969;
   --btn-praimary-color: #219f95;
+  --white-color: white;
 
   --font-light: Vazir-Light;
   --font-regular: Vazir;
@@ -28,6 +29,28 @@ html {
   padding-left: 15px;
   margin: 0 auto;
 }
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 2rem 1rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  color: var(--white-color);
+  font-family: var(--font-regular);
+  font-size: 1.3rem;
+  transition: all 150ms;
+}
+.btn:hover {
+  background-color: #12847a;
+}
+.btn--primary {
+  background-color: var(--btn-praimary-color);
+}
 
 /* ---------------    APP STYLE     -------------- */
 body {
@@ -35,5 +58,105 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   line-height: 1.5rem;
-  font-family: var(--font-regulasr);
+  font-family: var(--font-regular);
+}
+
+.request {
+  padding: 5rem 0;
+}
+.request-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.request__title {
+  font-family: var(--font-bold);
+  font-size: 2.2rem;
+  color: var(--text-primary-color);
+}
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2;
+  gap: 3.5rem;
+}
+
+/* Single card */
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid rgb(217, 217, 217);
+  color: var(--text-primary-color);
+  background-color: var(--white-color);
+  border-radius: 0.8rem;
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.card__header-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-color);
+}
+.card__header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  border-radius: 0.6rem;
+  font-family: var(--font-bold);
+  background-color: var(--secondary-color);
+}
+.card__header h2 {
+  font-family: var(--font-medium);
+  font-size: 1.6rem;
+}
+.card__date {
+  font-family: var(--font-medium);
+  font-size: 1.2rem;
+  color: var(--text-secondary-color);
+}
+
+.card__body {
+  margin-bottom: 1.6rem;
+}
+.card__body-title {
+  font-family: var(--font-bold);
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  line-height: 2.7rem;
+}
+.card__body-discription {
+  font-family: var(--font-light);
+  font-size: 1.2rem;
+  color: var(--text-secondary-color);
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card__profile-img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+.card__profile-title {
+  font-family: var(--font-bold);
+  font-size: 1.3rem;
 }

@@ -3,12 +3,24 @@
   .container {
     width: 540px;
   }
+  .card {
+    padding: 1.7rem;
+  }
+  .card__profile-title {
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .container {
     width: 720px;
+  }
+  .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -17,12 +29,27 @@
   .container {
     width: 960px;
   }
+  .cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__profile-title {
+    font-size: 1.3rem;
+  }
+  .btn {
+    font-size: 1.3rem;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
+  }
+  .card__profile-title {
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 1.6rem;
   }
 }
 

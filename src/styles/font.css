@@ -1,16 +1,16 @@
 @font-face {
   font-family: Vazir;
-  src: url("../fonts/Vazir.woff") format(woff);
+  src: url("../fonts/Vazir-FD-WOL.woff") format(woff);
 }
 @font-face {
   font-family: Vazir-Light;
-  src: url("../fonts/Vazir-Light.woff") format(woff);
+  src: url("../fonts/Vazir-Light-FD-WOL.woff") format(woff);
 }
 @font-face {
   font-family: Vazir-Medium;
-  src: url("../fonts/Vazir-Medium.woff") format(woff);
+  src: url("../fonts/Vazir-Medium-FD-WOL.woff") format(woff);
 }
 @font-face {
   font-family: Vazir-Bold;
-  src: url("../fonts/Vazir-Bold.woff") format(woff);
+  src: url("../fonts/Vazir-Bold-FD-WOL.woff") format(woff);
 }
